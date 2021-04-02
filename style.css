@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.container-nav {
+  width: 100%;
+  height: 50px;
+  z-index: 11;
+  min-width: 778px;
+  position: fixed;
+}
+.nav-wrap {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f1e3f3;
+  z-index: 10;
+  min-width: 778px;
+}
+.header {
+  padding: 1em;
+  flex: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #565254;
+  cursor: pointer;
+  transition: 1.5s;
+}
+.header:hover {
+  color: black;
+  text-transform: uppercase;
+}
+.list {
+  padding: 1em;
+  flex: 8;
+  justify-content: space-evenly;
+  display: flex;
+  width: 30em;
+  list-style: none;
+}
+.list .list-items {
+  font-size: larger;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: null;
+}
+.list .list-items a {
+  text-decoration: none;
+  color: #565254;
+  transition: 1.2;
+}
+.video {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  object-fit: cover;
+}
+.overlay {
+  background-color: #92b2fb;
+  mix-blend-mode: overlay;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+}
+.list .list-items a:hover {
+  font-size: 1.2em;
+  padding: 1em;
+}
+.video-cover {
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+@media only screen and (max-width: 600px) {
+}
+.content {
+  height: 10em;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  top: 45%;
+  padding: 1em;
+  width: 100%;
+  position: absolute;
+  z-index: 11;
+  background:url('./media/th (2).jpg');
+  box-sizing: border-box;
+  justify-content: center;
+  text-transform: uppercase;
+  background-attachment: fixed;
+}
+.btn {
+  padding: 1em 2em;
+  background-color: rgb(255, 255, 255);
+  font-family: Arial, sans-serif;
+  border: rgb(30, 30, 161) 7px solid;
+  border-radius: 5em;
+  font-weight: 700;
+  color: rgb(30, 30, 161);
+  transition: 0.5s;
+}
+.btn:hover {
+  cursor: pointer;
+  padding: 1.5em 2.5em;
+  background-color: rgb(30, 30, 161);
+  font-family: Arial, sans-serif;
+  border: rgb(255, 255, 255) 7px solid;
+  border-radius: 5em;
+  font-weight: 700;
+  color: white;
+  font-size: 15px;
+}
+.join {
+  color: #000000;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 0.2em;
+  position: relative;
+}
+.section-clor {
+  margin-left: 80%;
+  margin-top: -7em;
+  background-color: rgb(17, 97, 189);
+  width: 20%;
+  height: 20em;
+  position: absolute;
+  -webkit-clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  z-index: 12;
+  animation-name: ran;
+  animation-duration: 5s;
+    animation-delay: 1s;
+  animation-iteration-count: infinite;
+}
+.back {
+  margin-top: -1em;
+  width: 100%;
+  height: 19em;
+  background-color: rgb(27, 27, 27);
+}
+.about-us {
+  font-size: 30px;
+  color: white;
+  position: absolute;
+  margin: 4em 0 0 2em;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.about-content {
+  max-width: 1000px;
+  z-index: 13;
+  margin: 10em 0 0 3em;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+@keyframes ran {
+  0% {
+    background-color: Red;
+  }
+  15% {
+    background-color: Orange;
+  }
+  30% {
+    background-color: Yellow;
+  }
+  45% {
+    background-color: Green;
+  }
+  60% {
+    background-color: Blue;
+  }
+  75% {
+    background-color: Indigo;
+  }
+  90% {
+    background-color: Indigo;
+  }
+  100% {
+      background-color:darkslateblue ;
+  }
+}
